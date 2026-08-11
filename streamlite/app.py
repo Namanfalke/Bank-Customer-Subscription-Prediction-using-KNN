@@ -31,7 +31,8 @@ if st.button('Submit'):
     # st.write(input_data)
     # st.write(scaled_input)
     prediction = knn.predict(scaled_input)
-    if prediction == "yes" :
-        st.write(prediction, "you are eligible for taking subscriptions of this bank ")
-    elif prediction == "no" :
-        st.write(prediction, "you are not eligible for taking subscriptions of this bank ")
+
+if prediction == "yes":
+    st.write("you are eligible for taking subscriptions of this bank ")
+elif prediction == "no":
+    st.write("you are not eligible for taking subscriptions of this bank ")
