@@ -1,5 +1,5 @@
 import pandas as pd
-import streamlite as st
+import streamlit as st
 import joblib
 
 knn=joblib.load("../model/KNN_model.pkl")
