@@ -31,11 +31,12 @@ if st.button('Submit'):
     # st.write(input_data)
     # st.write(scaled_input)
     prediction = knn.predict(scaled_input)
+    if prediction == "Yes":
+        st.success("✅ Customer is likely to subscribe")
+    else:
+        st.error("❌ Customer is unlikely to subscribe")
 
-if prediction == "Yes":
-    st.success("✅ Customer is likely to subscribe")
-else:
-    st.error("❌ Customer is unlikely to subscribe")
+
 
 # if prediction == "yes":
 #     st.write("you are eligible for taking subscriptions of this bank ")
