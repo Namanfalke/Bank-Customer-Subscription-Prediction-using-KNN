@@ -24,7 +24,7 @@ Housing_Loan= st.number_input("Labelled_Housing_Loan")
 Personal_Loan= st.number_input('Labelled_Personal_Loan')
 Contacted_Before= st.number_input('Labelled_Contacted_Before')
 
-input_data=['age','annual_Inc','Cre_Sco', 'acc_bal', 'camp_coun', 'months_with_bank', 'Education', 'Housing_Loan', 'Personal_Loan', 'Contacted_Before']
+input_data=[age, annual_Inc, Cre_Sco, acc_bal, camp_coun, months_with_bank, Education, Housing_Loan, Personal_Loan, Contacted_Before]
 
 if st.button('Submit'):
     scaled_input = ss.transform([input_data])
