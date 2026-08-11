@@ -3,7 +3,7 @@ import streamlite as st
 import joblib
 
 knn=joblib.load("../model/KNN_model.pkl")
-ss=joblib.load("../model/StandardScalar")
+ss=joblib.load("../model/StandardScalar.pkl")
 
 st.set_page_config(page_title="My App", layout='wide')
 st.title("My App")
