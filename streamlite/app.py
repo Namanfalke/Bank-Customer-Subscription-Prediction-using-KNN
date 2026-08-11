@@ -260,10 +260,18 @@ st.markdown(
 # LOAD MODEL
 # =========================================================
 
+# BASE_DIR = Path(__file__).resolve().parent
+
+# model_path = BASE_DIR / "model" / "KNN_model.pkl"
+# scaler_path = BASE_DIR / "model" / "StandardScalar.pkl"
+
+# knn = joblib.load(model_path)
+# ss = joblib.load(scaler_path)
+
 BASE_DIR = Path(__file__).resolve().parent
 
-model_path = BASE_DIR / "model" / "KNN_model.pkl"
-scaler_path = BASE_DIR / "model" / "StandardScalar.pkl"
+model_path = BASE_DIR.parent / "model" / "KNN_model.pkl"
+scaler_path = BASE_DIR.parent / "model" / "StandardScalar.pkl"
 
 knn = joblib.load(model_path)
 ss = joblib.load(scaler_path)
